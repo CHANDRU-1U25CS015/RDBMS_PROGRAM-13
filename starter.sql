@@ -37,7 +37,17 @@ INSERT INTO Student VALUES
 (1001,'Arun', 201),
 (1002,'Divya', 202),
 (1003,'Karthik', 203);
-SELECT*FROM Department;
-SELECT*FROM Faculty;
-SELECT*FROM Course;
-SELECT*FROM Student;
+SELECT * FROM Department;
+SELECT * FROM Faculty;
+SELECT * FROM Course;
+SELECT * FROM Student;
+SELECT
+s.StudentID,
+s.StudentName,
+c.CourseName,
+f.FacultyName,
+d.DepartmentName
+FROM Student s
+JOIN Course c ON s.CourseID = c.CourseID
+JOIN Faculty f ON c.FacultyID = f.FacultyID
+JOIN Department d ON f.DepartmentID = d.DepartmentID;
