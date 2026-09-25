@@ -38,7 +38,7 @@ INSERT INTO Student VALUES
 (1001,'Arun', 201),
 (1002,'Divya', 202),
 (1003,'Karthik', 203);
-SELECT * FROM Department;
-SELECT * FROM Faculty;
-SELECT * FROM Course;
-SELECT * FROM Student;
+SELECT*FROM Department;
+SELECT*FROM Faculty;
+SELECT*FROM Course;
+SELECT*FROM Student;
