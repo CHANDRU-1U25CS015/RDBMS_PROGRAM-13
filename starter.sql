@@ -17,7 +17,6 @@ FacultyID INT,
 FOREIGN KEY (FacultyID) REFERENCES Faculty(FacultyID)
 );
 CREATE TABLE Student (
-
 StudentID INT PRIMARY KEY,
 StudentName VARCHAR(50),
 CourseID INT,
